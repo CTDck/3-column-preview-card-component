@@ -2,16 +2,19 @@
 .sedan {
   background-color: #e38826;
   color: #e38826;
+  border-radius: 10px 0 0 10px;
 }
 
 .suv {
   background-color: #006970;
   color: #006970;
+  border-radius: 0;
 }
 
 .luxury {
   background-color: #004241;
   color: #004241;
+  border-radius: 0 10px 10px 0;
 }
 
 /* Card array positioning */
@@ -44,6 +47,7 @@ h1 {
 /* Gives card fixed height regardless of screensize */
 .card {
   height: 500px;
+  width: 100%;
 }
 
 .card-info {
@@ -102,4 +106,14 @@ h1 {
   padding: 6px 5px 7px 5px;
   transition-duration: 0.4s;
   color: #9147ff;
+}
+
+@media (max-width: 616px){
+  .sedan {
+    border-radius: 10px 10px 0 0;
+  }
+  .luxury {
+    border-radius: 0 0 10px 10px;
+  }
+
 }
